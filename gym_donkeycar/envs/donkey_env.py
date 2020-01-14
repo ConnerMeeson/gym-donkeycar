@@ -30,6 +30,7 @@ class DonkeyEnv(gym.Env):
     THROTTLE_MIN = 0.0
     THROTTLE_MAX = 5.0
     VAL_PER_PIXEL = 255
+    _max_episode_steps = np.inf
 
     def __init__(self, level, time_step=0.05, frame_skip=2):
 
