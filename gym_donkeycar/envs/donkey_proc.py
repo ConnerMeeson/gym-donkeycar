@@ -25,7 +25,7 @@ class DonkeyUnityProcess(object):
         # Launch Unity environment
         if headless:
             self.proc1 = subprocess.Popen(
-                [sim_path, '-nographics', '-batchmode'] + port_args)
+                [sim_path, '-batchmode'] + port_args)
         else:
             self.proc1 = subprocess.Popen(
                 [sim_path] + port_args)
